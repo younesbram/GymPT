@@ -43,11 +43,11 @@ def calculate_tdee(height, weight, activity_level, goal, age, units):
     tdee = bmr * activity_level
 
     # Adjust for goal (e.g., weight loss)
-    if goal == "Weight Loss":
-        tdee -= 350  # Example deficit for weight loss
-    elif goal == "Muscle Gain":
-        tdee += 350
-    
+    #if goal == "Weight Loss":
+    #    tdee -= 350  # Example deficit for weight loss
+    #elif goal == "Muscle Gain":
+   #     tdee += 350
+   #currently gpt4 already does this part 
     return tdee
     
 
