@@ -18,7 +18,7 @@ st.sidebar.title('Insert OpenAI API Key to use GPT4')
 user_openai_key = st.sidebar.text_input('Enter OpenAI API Key (Please):')
 
 # Use the user-provided key if available, otherwise use the secret key
-openai_api_key = user_openai_key if user_openai_key else st.secrets["openai_key"]
+openai_api_key = user_openai_key if user_openai_key else st.secrets["OPENAI_API_KEY"]
 
 # Set the OpenAI API key
 openai.api_key = openai_api_key
